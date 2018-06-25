@@ -13,6 +13,32 @@
 
 <body>
     <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Médiathèque</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Catalogue
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_form.html">Connexion / Inscription</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <form id="user_form" action="home.html" method="post" class="my-5">
             <h2>Sign Up</h2>
             <div class="form-group row">
@@ -37,8 +63,8 @@
                 <label for="pass" class="col-sm-2 col-form-label">Password:</label>
                 <div class="col-sm-2">
                     <input type="password" id="pass" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                    oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
-                    oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
+                        oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
+                        oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
                 </div>
             </div>
             <div class="form-group row">
@@ -51,8 +77,8 @@
                 <label for="telNo" class="col-sm-2 col-form-label">Phone:</label>
                 <div class="col-sm-2">
                     <input id="telNo" name="telNo" type="tel" placeholder="XX.XX.XX.XX.XX" required pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
-                    oninvalid="this.setCustomValidity('Phone must be formatted as XX.XX.XX.XX.XX')" oninput="setCustomValidity('')"
-                    title="Phone must be formatted as XX.XX.XX.XX.XX">
+                        oninvalid="this.setCustomValidity('Phone must be formatted as XX.XX.XX.XX.XX')" oninput="setCustomValidity('')"
+                        title="Phone must be formatted as XX.XX.XX.XX.XX">
                 </div>
             </div>
             <div class="button">
@@ -72,8 +98,8 @@
                 <label for="logpass" class="col-sm-2 col-form-label">Password:</label>
                 <div class="col-sm-2">
                     <input type="password" id="logpass" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                    oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
-                    oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
+                        oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
+                        oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
                 </div>
             </div>
             <div class="button">
