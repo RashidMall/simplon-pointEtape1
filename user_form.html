@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Médiathèque - Register / Log in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+
 <body>
     <div class="container">
         <form id="user_form" action="home.html" method="post">
@@ -26,8 +30,8 @@
             <div>
                 <label for="pass">Password:</label>
                 <input type="password" id="pass" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')" oninput="setCustomValidity('')" 
-                title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
+                    oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
+                    oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
             </div>
             <div>
                 <label for="mail">E-mail:</label>
@@ -36,33 +40,39 @@
             <div>
                 <label for="telNo">Phone:</label>
                 <input id="telNo" name="telNo" type="tel" placeholder="XX.XX.XX.XX.XX" required pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
-                oninvalid="this.setCustomValidity('Phone must be formatted as XX.XX.XX.XX.XX')" oninput="setCustomValidity('')"
-                title="Phone must be formatted as XX.XX.XX.XX.XX">
+                    oninvalid="this.setCustomValidity('Phone must be formatted as XX.XX.XX.XX.XX')" oninput="setCustomValidity('')"
+                    title="Phone must be formatted as XX.XX.XX.XX.XX">
             </div>
             <div class="button">
-                <button id="submitButton" type="submit">Submit</button>
+                <button id="submitButton" type="submit" class="btn btn-primary mb-2">Submit</button>
             </div>
         </form>
 
         <form id="login_form" action="home.html" method="post">
-                <h2>Log In</h2>
-                <div>
-                    <label for="logname">Username:</label>
-                    <input type="text" id="logname" name="user_name" required pattern=".{3,}" title="3 characters minimum">
-                </div>
-                <div>
-                    <label for="logpass">Password:</label>
-                    <input type="password" id="logpass" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                    oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')" oninput="setCustomValidity('')" 
-                    title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
-                </div>
-                <div class="button">
-                    <button id="loginButton" type="submit">Log In</button>
-                </div>
-            </form>
+            <h2>Log In</h2>
+            <div>
+                <label for="logname">Username:</label>
+                <input type="text" id="logname" name="user_name" required pattern=".{3,}" title="3 characters minimum">
+            </div>
+            <div>
+                <label for="logpass">Password:</label>
+                <input type="password" id="logpass" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    oninvalid="this.setCustomValidity('A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character')"
+                    oninput="setCustomValidity('')" title="A password must be at least eight characters including one uppercase letter, one lowercase letter, one number and special character">
+            </div>
+            <div class="button">
+                <button id="loginButton" type="submit" class="btn btn-primary mb-2">Log In</button>
+            </div>
+        </form>
     </div>
 
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
